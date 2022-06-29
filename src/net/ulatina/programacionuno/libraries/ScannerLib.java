@@ -23,7 +23,7 @@ public class ScannerLib {
             return scanner.nextInt();
         } else {
             System.out.println("'" + scanner.next() + "' no es un numero entero");
-            System.out.printf("Ejemplo de numero entero: 18");
+            System.out.println("Ejemplo de numero entero: 18");
             return scanInt(toPrint);
         }
     }
