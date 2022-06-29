@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package net.ulatina.programacionuno;
+package us.fiestaboleana.programacionuno;
 
-import net.ulatina.programacionuno.exercises.Matematico;
+import us.fiestaboleana.programacionuno.exercises.Matematico;
 
 public class ProgramacionUno {
 

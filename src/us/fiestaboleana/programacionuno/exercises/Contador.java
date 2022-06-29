@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package net.ulatina.programacionuno.exercises;
+package us.fiestaboleana.programacionuno.exercises;
 
-import net.ulatina.programacionuno.libraries.ScannerLib;
+import us.fiestaboleana.programacionuno.libraries.ScannerLib;
 
 public class Contador {
     public Contador() {

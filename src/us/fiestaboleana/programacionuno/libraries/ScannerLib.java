@@ -1,4 +1,4 @@
-package net.ulatina.programacionuno.libraries;
+package us.fiestaboleana.programacionuno.libraries;
 
 import java.util.Collections;
 import java.util.List;
