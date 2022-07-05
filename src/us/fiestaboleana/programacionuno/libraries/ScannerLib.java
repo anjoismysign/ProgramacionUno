@@ -6,6 +6,19 @@ import java.util.Scanner;
 
 public class ScannerLib {
 
+//    public static short scanShort(List<String> toPrint) {
+//        toPrint.forEach(System.out::println);
+//        Scanner scanner = new Scanner(System.in);
+//        if (scanner.hasNextShort()) {
+//            return scanner.nextShort();
+//        } else {
+//            System.out.println("'" + scanner.next() + "' no es un short");
+//            System.out.println("Short: -32000 - 32000");
+//            System.out.println("Ejemplo de short: 17");
+//            return scanShort(toPrint);
+//        }
+//    }
+
     /**
      * forma elegante de consultar por un entero
      * de ser posible se devuelve el valor, de lo
@@ -22,8 +35,9 @@ public class ScannerLib {
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
         } else {
-            System.out.println("'" + scanner.next() + "' no es un numero entero");
-            System.out.println("Ejemplo de numero entero: 18");
+            System.out.println("'" + scanner.next() + "' no es un short");
+            System.out.println("Short: -32000 - 32000");
+            System.out.println("Ejemplo de short: 17");
             return scanInt(toPrint);
         }
     }
