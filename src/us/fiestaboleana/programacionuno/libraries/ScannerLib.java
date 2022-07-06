@@ -23,7 +23,7 @@ public class ScannerLib {
             return scanner.nextInt();
         } else {
             System.out.println("'" + scanner.next() + "' no es un entero");
-            System.out.println("Integer (entero): -2147483648 - 2147483647");
+            System.out.println("Integer (entero): '-2147483648' hasta '2147483647'");
             System.out.println("Ejemplo de entero: 17");
             return scanInt(toPrint);
         }
