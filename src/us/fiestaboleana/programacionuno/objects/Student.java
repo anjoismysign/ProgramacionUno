@@ -34,19 +34,19 @@ public class Student {
                     .scanString("¿Desea ingresar otro curso?");
             shouldContinue = input.equalsIgnoreCase("si");
         } while (shouldContinue);
-        System.out.printf("");
-        System.out.printf("Verificando...");
+        System.out.println("");
+        System.out.println("Verificando...");
         getCoursesClone().forEach(course -> {
             System.out.println(course.getCourseName() + ": " + course.getGrade());
         });
-        System.out.printf("");
-        System.out.printf("¿La informacion es correcta?");
+        System.out.println("");
+        System.out.println("¿La informacion es correcta?");
         String input = ScannerLib.scanString("De no ser asi, por favor ingrese 'no'.");
         if (input.equalsIgnoreCase("no")) {
             setupCourses();
             return;
         }
-        System.out.printf("");
+        System.out.println("");
         System.out.println("Promedio: " + getAverage());
     }
 
