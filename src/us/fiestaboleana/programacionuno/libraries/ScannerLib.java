@@ -6,19 +6,6 @@ import java.util.Scanner;
 
 public class ScannerLib {
 
-//    public static short scanShort(List<String> toPrint) {
-//        toPrint.forEach(System.out::println);
-//        Scanner scanner = new Scanner(System.in);
-//        if (scanner.hasNextShort()) {
-//            return scanner.nextShort();
-//        } else {
-//            System.out.println("'" + scanner.next() + "' no es un short");
-//            System.out.println("Short: -32000 - 32000");
-//            System.out.println("Ejemplo de short: 17");
-//            return scanShort(toPrint);
-//        }
-//    }
-
     /**
      * forma elegante de consultar por un entero
      * de ser posible se devuelve el valor, de lo
@@ -35,9 +22,9 @@ public class ScannerLib {
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
         } else {
-            System.out.println("'" + scanner.next() + "' no es un short");
-            System.out.println("Short: -32000 - 32000");
-            System.out.println("Ejemplo de short: 17");
+            System.out.println("'" + scanner.next() + "' no es un entero");
+            System.out.println("Integer (entero): '-2147483648' hasta '2147483647'");
+            System.out.println("Ejemplo de entero: 17");
             return scanInt(toPrint);
         }
     }
@@ -59,7 +46,7 @@ public class ScannerLib {
             return scanner.nextDouble();
         } else {
             System.out.println("'" + scanner.next() + "' no es un numero decimal");
-            System.out.println("Ejemplo de numero decimal: '3.14'");
+            System.out.println("Ejemplo de double (numero decimal): '3.14'");
             return scanDouble(toPrint);
         }
     }

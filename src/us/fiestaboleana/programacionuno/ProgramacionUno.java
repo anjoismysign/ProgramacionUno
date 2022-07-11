@@ -4,11 +4,11 @@
  */
 package us.fiestaboleana.programacionuno;
 
-import us.fiestaboleana.programacionuno.exercises.Matematico;
+import us.fiestaboleana.programacionuno.exercises.ListeroDubstep;
 
 public class ProgramacionUno {
 
     public static void main(String[] args) {
-        new Matematico();
+        new ListeroDubstep();
     }
 }
