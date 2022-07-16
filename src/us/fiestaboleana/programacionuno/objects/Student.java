@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package us.fiestaboleana.programacionuno.objects;
 
 import us.fiestaboleana.programacionuno.libraries.ScannerLib;
@@ -10,19 +6,25 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Student {
+public class Student extends Persona {
 
-    private final String studentName;
+    /**
+     * Esto es el famoso "carné" de un estudiante.
+     */
+    private String id;
     private HashMap<String, Course> courses;
 
-    public Student(String studentName, boolean setupCourses) {
-        this.studentName = studentName;
+    public Student(String nombre, double altura, String cedula,
+                   String direccion, int edad, String id, boolean setupCursos) {
+        super(nombre, altura, cedula, direccion, edad);
+        this.id = id;
         this.courses = new HashMap<>();
-        if (setupCourses)
+        if (setupCursos) {
             setupCourses();
+        }
     }
 
-    public void setupCourses() {
+    public final void setupCourses() {
         boolean shouldContinue;
         do {
             String courseName = ScannerLib
@@ -50,10 +52,6 @@ public class Student {
         System.out.println("Promedio: " + getAverage());
     }
 
-    public String getStudentName() {
-        return studentName;
-    }
-
     public void addCourse(Course course) {
         courses.put(course.getCourseName(), course);
     }
@@ -72,5 +70,14 @@ public class Student {
             sum += course.getGrade();
         }
         return sum / getCoursesClone().size();
+    }
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
