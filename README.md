@@ -6,6 +6,7 @@ como lo son los ejemplos Student y Course.
 
 Librerías actuales:
 + ScannerLib (ejemplo de cómo usarlo: https://github.com/anjoismysign/Passcode)
++ PanelLib
 
 Si tienen alguna duda, si tienen alguna sugerencia, por favor dirigirse a la ventana de "issues". También pueden
 realizar dicha consulta o sugerencia en otros medios (tales como Whatsapp).
