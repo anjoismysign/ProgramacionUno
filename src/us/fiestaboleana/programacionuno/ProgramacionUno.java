@@ -4,11 +4,12 @@
  */
 package us.fiestaboleana.programacionuno;
 
-import us.fiestaboleana.programacionuno.exercises.Matriculero;
+import us.fiestaboleana.programacionuno.objects.student.Student;
+import us.fiestaboleana.programacionuno.objects.student.StudentBuilder;
 
 public class ProgramacionUno {
 
     public static void main(String[] args) {
-        new Matriculero();
+        Student student = StudentBuilder.fromDetailedPanel();
     }
 }

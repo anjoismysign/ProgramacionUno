@@ -1,7 +1,7 @@
 package us.fiestaboleana.programacionuno.exercises;
 
 import us.fiestaboleana.programacionuno.libraries.ScannerLib;
-import us.fiestaboleana.programacionuno.objects.Student;
+import us.fiestaboleana.programacionuno.objects.student.Student;
 
 import java.util.ArrayList;
 import java.util.List;

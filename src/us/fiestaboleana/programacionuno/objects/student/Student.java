@@ -1,6 +1,9 @@
-package us.fiestaboleana.programacionuno.objects;
+package us.fiestaboleana.programacionuno.objects.student;
 
-import us.fiestaboleana.programacionuno.libraries.ScannerLib;
+import us.fiestaboleana.programacionuno.libraries.PanelLib;
+import us.fiestaboleana.programacionuno.objects.Persona;
+import us.fiestaboleana.programacionuno.objects.course.Course;
+import us.fiestaboleana.programacionuno.objects.course.CourseBuilder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,13 +30,10 @@ public class Student extends Persona {
     public final void setupCourses() {
         boolean shouldContinue;
         do {
-            String courseName = ScannerLib
-                    .scanString("Ingrese nombre de curso");
-            int grade = ScannerLib.scanInt("Ingrese nota de " + courseName);
-            Course course = new Course(grade, courseName);
+            Course course = CourseBuilder.fromDetailedPanel(false, false);
             addCourse(course);
-            String input = ScannerLib
-                    .scanString("¿Desea ingresar otro curso?");
+            String input = PanelLib
+                    .requestString("¿Desea ingresar otro curso?");
             shouldContinue = input.equalsIgnoreCase("si");
         } while (shouldContinue);
         System.out.println("");
@@ -42,14 +42,7 @@ public class Student extends Persona {
             System.out.println(course.getCourseName() + ": " + course.getGrade());
         });
         System.out.println("");
-        System.out.println("¿La informacion es correcta?");
-        String input = ScannerLib.scanString("De no ser asi, por favor ingrese 'no'.");
-        if (input.equalsIgnoreCase("no")) {
-            setupCourses();
-            return;
-        }
-        System.out.println("");
-        System.out.println("Promedio: " + getAverage());
+        PanelLib.showMessage("Promedio: " + getAverage());
     }
 
     public void addCourse(Course course) {
